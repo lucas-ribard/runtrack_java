@@ -16,7 +16,7 @@ class CompteBancaire{
 
     }
     void consulterSolde() {
-        System.out.println("Votre solde est de " + ConsoleColors.YELLOW_BRIGHT + + this.solde+"€" + ConsoleColors.RESET);
+        System.out.println("Votre solde est de " + ConsoleColors.YELLOW_BRIGHT + this.solde+"€" + ConsoleColors.RESET);
     }
 
     void menu(){
@@ -49,9 +49,17 @@ class CompteBancaire{
 
         } else {
             System.out.println("Veillez saisir un action valide");
+            clear();
         }
 
 
+    }
+
+    void clear(){
+        //saute la ligne 50 fois pour ne pas remplir l'écrans de ligne inutile
+        for (int i = 0; i < 50; ++i) {
+            System.out.println();
+        }
     }
     //menu de sortie
     void exit(){
@@ -59,10 +67,7 @@ class CompteBancaire{
         System.out.println( ConsoleColors.CYAN_BOLD + " 1 Retourner au menu "+ ConsoleColors.RED_BOLD+"  2 Quitter "+ ConsoleColors.RESET);
         int action = sc.nextInt();
         if (action == 1){
-            //saute la ligne 50 fois pour ne pas remplir l'écrans de ligne inutile
-            for (int i = 0; i < 50; ++i) {
-                System.out.println();
-            }
+            clear();
         } else if (action == 2) {
             //stop le code
             System. exit(0);
