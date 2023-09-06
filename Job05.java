@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class Job05 {
     public static void main(String[] args) {
         System.out.println("Java JeuDeDes");
