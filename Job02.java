@@ -6,7 +6,7 @@ class Voiture {
     String couleur;
     int vitesse;
 
-    float Statut;  //statut de la voiture , 0 si à l'arret, 1 si démarré
+    boolean Statut;  //statut de la voiture , 0 si à l'arret, 1 si démarré
 
     //Constructeur de la classe Voiture
     Voiture(String marque, String couleur, int vitesse) {
@@ -14,15 +14,15 @@ class Voiture {
         this.marque = marque;
         this.couleur = couleur;
         this.vitesse = vitesse;
-        this.Statut = 0;
+        this.Statut = false;
         System.out.println("La Voiture à été crée, c'est une "+ ConsoleColors.CYAN_BRIGHT + marque + " " + couleur + ConsoleColors.PURPLE_BOLD);
         System.out.println();
     }
 
     public  void demarrer() {
-        this.Statut = 1;
+        this.Statut = true;
 
-        if(this.Statut==1){
+        if(this.Statut==true){
             System.out.println("La Voiture démarre");
         }else{
             System.out.println(ConsoleColors.RED_BOLD_BRIGHT + "la voiture est en panne"+ ConsoleColors.PURPLE_BOLD);
