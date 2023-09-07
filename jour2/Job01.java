@@ -53,7 +53,7 @@ class CompteBancaire{
     }
     void recupererInteret() {
         genererInteret();
-        this.soldeCompteEpargne=this.soldeCompteEpargne+this.interet;
+        this.soldeCompteEpargne=this.soldeCompteEpargne+this.revenu;
         System.out.println("Le montant généré est de : " +  ConsoleColors.YELLOW_BRIGHT + this.revenu  + "€" + ConsoleColors.RESET);
         System.out.println("votre nouveaux solde est de : " +  ConsoleColors.YELLOW_BRIGHT + this.soldeCompteEpargne  + "€" + ConsoleColors.RESET);
     }
@@ -99,7 +99,7 @@ class CompteBancaire{
             }else if (action==6){
                 consulterTaux();
                 exit();
-            }else if (action==7){
+            }else {
                 recupererInteret();
                 exit();
             }
@@ -141,8 +141,7 @@ public class Job01 {
 
         CompteBancaire compteBancaire = new CompteBancaire();
         //boucle infinie pour retourner au menu
-        int i = 0;
-        while ( i <= 5 ) {
+        while (true) {
             compteBancaire.menu();
         }
 
