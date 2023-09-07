@@ -53,7 +53,7 @@ class CompteBancaire{
     }
     void recupererInteret() {
         genererInteret();
-        this.soldeCompteEpargne=this.soldeCompteEpargne+this.interet;
+        this.soldeCompteEpargne=this.soldeCompteEpargne+this.revenu;
         System.out.println("Le montant généré est de : " +  ConsoleColors.YELLOW_BRIGHT + this.revenu  + "€" + ConsoleColors.RESET);
         System.out.println("votre nouveaux solde est de : " +  ConsoleColors.YELLOW_BRIGHT + this.soldeCompteEpargne  + "€" + ConsoleColors.RESET);
     }
