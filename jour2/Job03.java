@@ -1,6 +1,10 @@
 package jour2;
 abstract  class Animal {
     abstract  void faireDuBruit() ;
+    /*
+    une fonction abstraite n'a pas de corps, elle est similaire à un contrat
+    si la fonction n'est pas utilisé, le programme ne compile pas
+     */
 
 }
 
