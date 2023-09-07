@@ -8,6 +8,8 @@ class CompteBancaire{
 
     int revenu ;
 
+
+
     void genererInteret(){
         this.revenu = (this.soldeCompteEpargne*this.interet/100);
     }
