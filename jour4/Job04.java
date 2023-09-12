@@ -10,7 +10,7 @@ public class Job04 {
         //executor is a service that creates and manages threads for us
 
         Scanner sc= new Scanner(System.in);
-
+        System.out.println("CallableFutureExercice");
         int first = sc.nextInt();
         int second = sc.nextInt();
 
