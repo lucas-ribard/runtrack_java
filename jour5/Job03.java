@@ -3,6 +3,7 @@ package jour5;
 import java.util.HashMap;
 public class Job03 {
     public static void main(String[] args) {
+        System.out.println(" HashMapArgumentExercice.");
         HashMap<String, String> hash = new HashMap<>();
 
         if (args.length % 2 != 0) {
